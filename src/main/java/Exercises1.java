@@ -4,7 +4,7 @@ public class Exercises1 {
      */
     public long factorial(int n) {
         // TODO
-        return 0;
+        return 100;
     }
 
 
