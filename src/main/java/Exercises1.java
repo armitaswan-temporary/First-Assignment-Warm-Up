@@ -1,42 +1,37 @@
 public class Exercises1 {
-    /*
-    implement a function that returns factorial of given n
-     */
+
     public long factorial(int n) {
-        // TODO
-        return 100;
+        long result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
     }
 
-
-    /*
-    implement a function that return nth number of fibonacci series
-    the series -> 1, 1, 2, 3, 5, 8, ...
-    */
     public long fibonacci(int n) {
-        // TODO
-        return 0;
+        long firstNumber = 1;
+        long secondNumber = 1;
+        long savingNumber = 0;
+        for (int i = 2; i < n; i++) {
+            savingNumber = firstNumber + secondNumber;
+            firstNumber = secondNumber;
+            secondNumber = savingNumber;
+        }
+        return secondNumber;
     }
 
-
-    /*
-    implement a function that returns a triangle for example:
-    row = 5
-
-    *
-    **
-    ***
-    ****
-    *****
-
-     */
     public char[][] generateTriangle(int rows) {
-        // TODO
-        return null;
+        char[][] theTriangle = new char[rows][];
+        for (int i = 0; i < rows; i++) {
+            theTriangle[i] = new char[i + 1];
+            for (int j = 0; j <= i; j++) {
+                theTriangle[i][j] = '*';
+            }
+        }
+        return theTriangle;
     }
-
 
     public static void main(String[] args) {
-        // test your code here!
+        // test me here
     }
-
 }
