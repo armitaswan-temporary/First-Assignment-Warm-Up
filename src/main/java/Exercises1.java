@@ -32,6 +32,6 @@ public class Exercises1 {
     }
 
     public static void main(String[] args) {
-        // test me here
+        // test me here.
     }
 }
